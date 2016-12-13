@@ -1,0 +1,131 @@
+﻿/* Scott Hicks */
+/* PRG 270 Lab 2 3 */
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    width: 432px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+h1
+{
+    font-size: 180%;
+    color: white;
+    padding: 0;
+    margin-bottom: .5em;
+    text-align: center;
+    display: block;
+    background-image: url("/Images/WavingFlag.gif");
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+li
+{
+    display: inline;
+    padding-right: .5em;
+}
+li:nth-child(even) { color: blue; }
+li:nth-child(odd) { color: red; }
+
+a
+{
+    text-decoration: none; 
+    color: inherit;
+}
+a:hover{ text-decoration: underline; }
+
+label
+{
+    float: left;
+    width: 10em;
+}
+
+.label
+{
+    margin-right: .5em;
+    font-weight: bold;
+}
+.entry
+{
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 5em;
+}
+
+.validator
+{
+    font-size: 95%;
+    color: red;
+    margin-left: 1em;
+}
+
+.button
+{
+    margin-left: 6em;
+    margin-top: 1em;
+    width: 75px;
+}
+
+.button2
+{
+    margin-left: 12em;
+    margin-top: 1em;
+    width: 80px;
+}
+
+#changingImage
+{
+    height: 186px;
+    width: 100%;
+}
+
+#ValidationSummary
+{
+    color: red;
+}
+
+#drpInvestment
+{
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 5.27em;
+}
+
+#lblValue
+{
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+#lblPortfolioValue
+{
+    font-weight: bold;
+}
+
+#btnCalculate
+{
+    margin-left: 33px;
+}
+
+#btnClear
+{
+    margin-left: 202px;
+}
+
+#grdStocks
+{
+    border-style: solid;
+}
+

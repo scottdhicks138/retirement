@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    
+    <link href="Styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+    <img src="~/Images/BenjaminFranklin.png" runat="server" id="changingImage" />
+    <form id="form1" runat="server">
+
+    <div>
+        <h1>Retirement Fund Calculator</h1>
+    <div/>
+
+    <div>
+        <ul>
+            <li><a href="Default.aspx">HOME</a></li>
+            <li><a href="Cash.aspx">CASH</a></li>
+            <li><a href="401k.aspx">401(k)</a></li>
+            <li><a href="Stocks.aspx">STOCKS</a></li>
+            <li><a href="RealEstate.aspx">REAL ESTATE</a></li>
+            <li><a href="Collectibles.aspx">COLLECTIBLES</a></li>
+        </ul>
+    </div>
+         
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="StocksContent" runat="server">
+            </asp:ContentPlaceHolder>
+            
+            <asp:ContentPlaceHolder ID="CashContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="Content401k" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="RealEstateContent" runat="server">
+            </asp:ContentPlaceHolder>
+        
+            <asp:ContentPlaceHolder ID="CollectiblesContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Scott Hicks: Web Designer</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
