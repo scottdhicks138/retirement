@@ -32,4 +32,9 @@ public partial class Stocks : System.Web.UI.Page
         grdStocks.DataBind();
         lblPortfolioValue.Text = "$100,000.00";
     }
+
+    protected void btnBuyShares_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/BuyShares.aspx");
+    }
 }

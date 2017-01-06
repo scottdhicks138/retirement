@@ -19,7 +19,7 @@
 
         <div>
         <br />
-        <asp:Button ID="btnBuyShares" runat="server" CssClass="button2" Text="Buy Shares" />
+        <asp:Button ID="btnBuyShares" runat="server" CssClass="button2" Text="Buy Shares" OnClick="btnBuyShares_Click" />
         <br />
         </div>
 

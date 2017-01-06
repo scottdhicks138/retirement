@@ -70,10 +70,10 @@ public partial class SiteMaster : MasterPage
         changingImage.Height = 186;
         changingImage.Width = 432;
     }
-
-    public static void ChangeImage(string url)
+        
+    public void WebDesigner()
     {
-        //imgBenFranklin.ImageUrl = "~/Images/MovingBen.gif";
+        this.Response.Redirect("www.linkedin.com/in/MeetScottHicks");
     }
 
     protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)

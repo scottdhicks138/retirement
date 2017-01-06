@@ -11,15 +11,15 @@
 
 <body>
     
-    <img src="~/Images/BenjaminFranklin.png" runat="server" id="changingImage" />
+    <img src="~/Images/BenjaminFranklin.png" runat="server" class="image" id="changingImage" />
     <form id="form1" runat="server">
 
     <div>
-        <h1>Retirement Fund Calculator</h1>
+        <h1>Retirement Fund</h1>
     <div/>
 
     <div>
-        <ul>
+        <ul class="navbar">
             <li><a href="Default.aspx">HOME</a></li>
             <li><a href="Cash.aspx">CASH</a></li>
             <li><a href="401k.aspx">401(k)</a></li>
@@ -46,9 +46,18 @@
         
             <asp:ContentPlaceHolder ID="CollectiblesContent" runat="server">
             </asp:ContentPlaceHolder>
+            
+            <asp:ContentPlaceHolder ID="BuySharesContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="HistoryContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="CheckoutContent" runat="server">
+            </asp:ContentPlaceHolder>
 
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Scott Hicks: Web Designer</p>
+                <p>&copy; <%: DateTime.Now.Year %><a href="https://www.linkedin.com/in/MeetScottHicks" /> Scott Hicks: Web Designer</p>
             </footer>
         </div>
     </form>

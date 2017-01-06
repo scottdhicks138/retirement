@@ -21,7 +21,6 @@ public partial class _Default : Page
     {
         if (IsValid)
         {
-            //SiteMaster.ChangeImage("~/Images/MovingBen.gif");
             decimal beginBalance = Convert.ToDecimal(txtBegBal.Text);
             int monthlyInvestment = Convert.ToInt32(drpInvestment.SelectedValue);
             decimal yearlyInterestRate = Convert.ToDecimal(txtInterest.Text);
@@ -58,6 +57,11 @@ public partial class _Default : Page
         txtYears.Text = "";
         lblText.Text = "";
         lblValue.Text = "";
+    }
+
+    protected void btnHistory_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/History.aspx");
     }
         
 }

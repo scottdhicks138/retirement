@@ -12,7 +12,7 @@
             </tr>
 
             <tr>
-                <td>Beginning Balance</td>
+                <td>Current Value</td>
                 <td>
                     <asp:TextBox ID="txtBegBal" runat="server" CssClass="entry"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="ReqBal" runat="server" ControlToValidate="txtBegBal" Display="Static" CssClass="validator" ErrorMessage="Beginning Balance is required" Text="*" />
@@ -95,8 +95,9 @@
         </table>
 
     <div>
-        <asp:Button ID="Button1" runat="server" CssClass="button" Text="Calculate" OnClick="btnCalculate_Click" />
-        <asp:Button ID="Button2" runat="server" CssClass="button" CausesValidation="False" Text="Clear" OnClick="btnClear_Click" />
+        <asp:Button ID="btnCalculate" runat="server" Text="Calculate" OnClick="btnCalculate_Click" />
+        <asp:Button ID="btnClear" runat="server" CausesValidation="False" Text="Clear" OnClick="btnClear_Click" />
+        <asp:Button ID="btnHistory" runat="server" CausesValidation="false" Text="History" OnClick="btnHistory_Click" />
     </div>    
     
 
