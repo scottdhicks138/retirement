@@ -55,9 +55,14 @@
 
             <asp:ContentPlaceHolder ID="CheckoutContent" runat="server">
             </asp:ContentPlaceHolder>
+            
+            <asp:ContentPlaceHolder ID="EditBooksContent" runat="server">
+            </asp:ContentPlaceHolder>
 
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %><a href="https://www.linkedin.com/in/MeetScottHicks" /> Scott Hicks: Web Designer</p>
+                <p>&copy; <%: DateTime.Now.Year %><a href="https://www.linkedin.com/in/MeetScottHicks" /> Scott Hicks: Web Designer</p>&nbsp;
+                <asp:ImageButton ID="imgScottHicks" runat="server" ImageUrl="~/Images/ScottHicks.ico" ToolTip="Data Entry" PostBackUrl="~/Checkout.aspx" CausesValidation="False" />
+                
             </footer>
         </div>
     </form>
