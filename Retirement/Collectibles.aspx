@@ -10,9 +10,10 @@
     
     <div>
     
-        <asp:Label ID="lblChoose" runat="server" Text="Choose a collection"></asp:Label> &nbsp;&nbsp;
-        <asp:DropDownList ID="drpCollections" runat="server" DataSourceID="SqlDataSourceCollections" DataTextField="description" DataValueField="collection"></asp:DropDownList> &nbsp;&nbsp;
-        <asp:Button ID="btnEditBooks" runat="server" Text="Edit" OnClick="btnEditBooks_Click" />
+        <asp:Label ID="lblChoose" runat="server" Text="Choose a collection"></asp:Label> &nbsp;
+        <asp:DropDownList ID="drpCollections" runat="server" DataSourceID="SqlDataSourceCollections" DataTextField="description" DataValueField="collection"></asp:DropDownList> &nbsp;
+        <asp:Button ID="btnDetailView" runat="server" Text="Detail View" OnClick="btnDetailView_Click" /> &nbsp;
+        <asp:Button ID="btnFormView" runat="server" Text="Form View" OnClick="btnFormView_Click" /> &nbsp;
 
         <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSourceCollectibles" style="margin-top: 18px" ShowFooter="False" ShowHeader="False" Width="428px">
             <ItemStyle Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />

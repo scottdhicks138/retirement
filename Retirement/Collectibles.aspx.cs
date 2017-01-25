@@ -13,8 +13,13 @@ public partial class Collectibles : System.Web.UI.Page
         
     }
 
-    protected void btnEditBooks_Click(object sender, EventArgs e)
+    protected void btnDetailView_Click(object sender, EventArgs e)
     {
         this.Response.Redirect("EditBooks.aspx");
+    }
+
+    protected void btnFormView_Click(object sender, EventArgs e)
+    {
+        this.Response.Redirect("EditBooks2.aspx");
     }
 }
